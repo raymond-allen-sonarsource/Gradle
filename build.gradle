@@ -10,7 +10,7 @@ version = '1.0'
 
 sonarqube {
     properties {
-        property 'sonar.projectName', 'Example of SonarQube Scanner for Gradle Usage'
+        property 'sonar.projectName', 'GradleJenk'
     }
 }
 
@@ -38,12 +38,4 @@ jacocoTestReport {
     }
 }
 
-plugins {
-  id "org.sonarqube" version "3.2.0"
-}
 
-sonarqube {
-  properties {
-    property "sonar.projectKey", "raymond-allen-sonarsource_Gradle"
-  }
-}
