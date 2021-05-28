@@ -1,11 +1,17 @@
 plugins {
-  id "org.sonarqube" version "3.2.0"
+    id "jacoco"
+    id "java"
+    id "application"
+    id "org.sonarqube" version "3.0"
 }
 
+description = 'Example of SonarQube Scanner for Gradle Usage'
+version = '1.0'
+
 sonarqube {
-  properties {
-    property "sonar.projectKey", "raymond-allen-sonarsource_Gradle"
-  }
+    properties {
+        property 'sonar.projectName', 'Example of SonarQube Scanner for Gradle Usage'
+    }
 }
 
 // In this section you declare where to find the dependencies of your project
